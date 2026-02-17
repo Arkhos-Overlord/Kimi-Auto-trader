@@ -4,23 +4,23 @@ import pandas as pd
 class TradingStrategy:
     def __init__(self, exchange):
         self.exchange = exchange
-        self.ml_model = MLModel()
-        self.ml_model.train() # Train the model on initialization (or load a pre-trained one)
+        # Initialize model with the processed NSE data
+        self.ml_model = MLModel(data_path="data.csv")
+        self.ml_model.train()
 
     def execute_strategy(self):
-        print("Executing trading strategy with ML insights...")
-        # Placeholder for fetching real-time data to make predictions
-        # For demonstration, we'll use dummy data
-        current_market_data = pd.DataFrame([[6, 5]], columns=['feature1', 'feature2'])
-        prediction = self.ml_model.predict(current_market_data)
+        print("\n--- Executing Indian Market Strategy with ML Insights ---")
+        
+        # In a real scenario, you'd fetch the latest OHLC data from the exchange
+        # For demonstration, let's assume current daily return is +50 and volatility is 100
+        # (These values are relative to the Nifty 50 index points)
+        current_features = pd.DataFrame([[50, 100]], columns=['feature1', 'feature2'])
+        
+        prediction = self.ml_model.predict(current_features)
 
         if prediction == 1:
-            print("ML Model suggests a BUY signal.")
-            # self.exchange.place_order(symbol=\'BTC/USDT\', type=\'MARKET\', side=\'BUY\', amount=0.001)
+            print("SIGNAL: ML Model predicts UPWARD movement for the next session. [BUY/LONG]")
         else:
-            print("ML Model suggests a SELL/HOLD signal.")
-            # self.exchange.place_order(symbol=\'BTC/USDT\', type=\'MARKET\', side=\'SELL\', amount=0.001)
-
-        # Example: Fetch balance
-        # balance = self.exchange.get_balance()
-        # print(f"Current balance: {balance}")
+            print("SIGNAL: ML Model predicts DOWNWARD/NEUTRAL movement. [SELL/SHORT/WAIT]")
+        
+        print("--------------------------------------------------------\n")
