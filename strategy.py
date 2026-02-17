@@ -1,5 +1,6 @@
 from ml_model import MLModel
 import pandas as pd
+import logging
 
 class TradingStrategy:
     def __init__(self, exchange):
@@ -7,20 +8,26 @@ class TradingStrategy:
         # Initialize model with the processed NSE data
         self.ml_model = MLModel(data_path="data.csv")
         self.ml_model.train()
+        # Mapping for IndMoney Security IDs
+        self.security_mapping = {
+            'NIFTY50': 'NSE_INDEX_NIFTY50', # Note: Index trading might differ from stock trading
+            'RELIANCE': '2885'
+        }
 
     def execute_strategy(self):
-        print("\n--- Executing Indian Market Strategy with ML Insights ---")
+        logging.info("Executing trading strategy with ML insights...")
         
-        # In a real scenario, you'd fetch the latest OHLC data from the exchange
-        # For demonstration, let's assume current daily return is +50 and volatility is 100
-        # (These values are relative to the Nifty 50 index points)
-        current_features = pd.DataFrame([[50, 100]], columns=['feature1', 'feature2'])
+        # In a real scenario, you'd fetch the latest OHLC data and calculate these features
+        # For demonstration, we use dummy current features matching the model's expected columns
+        feature_cols = ['return', 'volatility', 'rsi', 'ema9', 'ema21', 'ema_signal']
+        current_features = pd.DataFrame([[50, 100, 45, 24000, 23800, 1]], columns=feature_cols)
         
         prediction = self.ml_model.predict(current_features)
 
         if prediction == 1:
-            print("SIGNAL: ML Model predicts UPWARD movement for the next session. [BUY/LONG]")
+            logging.info("SIGNAL: BUY/LONG for RELIANCE")
+            # Example: Placing a small test order on IndMoney
+            # self.exchange.place_order(security_id=self.security_mapping['RELIANCE'], side='BUY', qty=1)
         else:
-            print("SIGNAL: ML Model predicts DOWNWARD/NEUTRAL movement. [SELL/SHORT/WAIT]")
-        
-        print("--------------------------------------------------------\n")
+            logging.info("SIGNAL: SELL/SHORT/WAIT")
+            # self.exchange.place_order(security_id=self.security_mapping['RELIANCE'], side='SELL', qty=1)
