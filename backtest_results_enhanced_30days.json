@@ -1,0 +1,66 @@
+{
+  "period": "2026-01-19 to 2026-02-17",
+  "trading_days": 21,
+  "model_accuracy": 37.5,
+  "initial_balance": 100000,
+  "final_balance": 100000,
+  "total_profit": 0,
+  "roi": 0.0,
+  "total_trades": 0,
+  "winning_trades": 0,
+  "losing_trades": 0,
+  "win_rate": 0,
+  "max_drawdown": 0,
+  "sharpe_ratio": 0,
+  "avg_trade_pnl": 0,
+  "signals": [
+    {
+      "date": "2026-02-05",
+      "signal": "SELL",
+      "confidence": 0.6767031805693042,
+      "price": 25642.80078125
+    },
+    {
+      "date": "2026-02-06",
+      "signal": "SELL",
+      "confidence": 0.6173679786171119,
+      "price": 25693.69921875
+    },
+    {
+      "date": "2026-02-09",
+      "signal": "SELL",
+      "confidence": 0.6230444704856707,
+      "price": 25867.30078125
+    },
+    {
+      "date": "2026-02-10",
+      "signal": "SELL",
+      "confidence": 0.644121256262021,
+      "price": 25935.150390625
+    },
+    {
+      "date": "2026-02-11",
+      "signal": "SELL",
+      "confidence": 0.6512406921274333,
+      "price": 25953.849609375
+    },
+    {
+      "date": "2026-02-12",
+      "signal": "SELL",
+      "confidence": 0.6822640271301509,
+      "price": 25807.19921875
+    },
+    {
+      "date": "2026-02-13",
+      "signal": "SELL",
+      "confidence": 0.6893248736909974,
+      "price": 25471.099609375
+    },
+    {
+      "date": "2026-02-16",
+      "signal": "BUY",
+      "confidence": 0.5566528879232622,
+      "price": 25682.75
+    }
+  ]
+}

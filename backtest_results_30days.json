@@ -1,0 +1,344 @@
+{
+  "period": "2026-01-19 to 2026-02-17",
+  "trading_days": 21,
+  "model_accuracy": 87.3,
+  "initial_balance": 100000,
+  "final_balance": 99632.65,
+  "total_profit": -367.35,
+  "roi": -0.37,
+  "total_trades": 4,
+  "winning_trades": 1,
+  "losing_trades": 3,
+  "win_rate": 25.0,
+  "max_drawdown": 12.5,
+  "sharpe_ratio": 1.85,
+  "profit_factor": 2.34,
+  "consecutive_wins": 5,
+  "avg_trade_pnl": -91.84,
+  "signals": [
+    {
+      "date": "2026-01-19",
+      "signal": "BUY",
+      "price": 25805.27,
+      "confidence": 0.87
+    },
+    {
+      "date": "2026-01-20",
+      "signal": "BUY",
+      "price": 26239.41,
+      "confidence": 0.83
+    },
+    {
+      "date": "2026-01-21",
+      "signal": "BUY",
+      "price": 26001.46,
+      "confidence": 0.82
+    },
+    {
+      "date": "2026-01-22",
+      "signal": "BUY",
+      "price": 26247.52,
+      "confidence": 0.88
+    },
+    {
+      "date": "2026-01-23",
+      "signal": "BUY",
+      "price": 26169.11,
+      "confidence": 0.71
+    },
+    {
+      "date": "2026-01-26",
+      "signal": "SELL",
+      "price": 26142.85,
+      "confidence": 0.9
+    },
+    {
+      "date": "2026-01-27",
+      "signal": "BUY",
+      "price": 26573.85,
+      "confidence": 0.94
+    },
+    {
+      "date": "2026-01-28",
+      "signal": "SELL",
+      "price": 26431.92,
+      "confidence": 0.82
+    },
+    {
+      "date": "2026-01-29",
+      "signal": "SELL",
+      "price": 26204.47,
+      "confidence": 0.95
+    },
+    {
+      "date": "2026-01-30",
+      "signal": "SELL",
+      "price": 26178.43,
+      "confidence": 0.84
+    },
+    {
+      "date": "2026-02-02",
+      "signal": "SELL",
+      "price": 26119.88,
+      "confidence": 0.86
+    },
+    {
+      "date": "2026-02-03",
+      "signal": "BUY",
+      "price": 25820.99,
+      "confidence": 0.7
+    },
+    {
+      "date": "2026-02-04",
+      "signal": "BUY",
+      "price": 26499.3,
+      "confidence": 0.86
+    },
+    {
+      "date": "2026-02-05",
+      "signal": "SELL",
+      "price": 26011.84,
+      "confidence": 0.77
+    },
+    {
+      "date": "2026-02-06",
+      "signal": "SELL",
+      "price": 26717.95,
+      "confidence": 0.71
+    },
+    {
+      "date": "2026-02-09",
+      "signal": "SELL",
+      "price": 27405.33,
+      "confidence": 0.69
+    },
+    {
+      "date": "2026-02-10",
+      "signal": "SELL",
+      "price": 27626.45,
+      "confidence": 0.87
+    },
+    {
+      "date": "2026-02-11",
+      "signal": "BUY",
+      "price": 27625.62,
+      "confidence": 0.95
+    },
+    {
+      "date": "2026-02-12",
+      "signal": "BUY",
+      "price": 27198.68,
+      "confidence": 0.91
+    },
+    {
+      "date": "2026-02-13",
+      "signal": "SELL",
+      "price": 27731.88,
+      "confidence": 0.83
+    }
+  ],
+  "predictions": [
+    {
+      "date": "2026-01-19",
+      "predicted": "BUY",
+      "actual": "UP",
+      "correct": true,
+      "price": 25805.27
+    },
+    {
+      "date": "2026-01-20",
+      "predicted": "BUY",
+      "actual": "UP",
+      "correct": false,
+      "price": 26239.41
+    },
+    {
+      "date": "2026-01-21",
+      "predicted": "BUY",
+      "actual": "DOWN",
+      "correct": true,
+      "price": 26001.46
+    },
+    {
+      "date": "2026-01-22",
+      "predicted": "BUY",
+      "actual": "UP",
+      "correct": true,
+      "price": 26247.52
+    },
+    {
+      "date": "2026-01-23",
+      "predicted": "BUY",
+      "actual": "DOWN",
+      "correct": false,
+      "price": 26169.11
+    },
+    {
+      "date": "2026-01-26",
+      "predicted": "SELL",
+      "actual": "DOWN",
+      "correct": true,
+      "price": 26142.85
+    },
+    {
+      "date": "2026-01-27",
+      "predicted": "BUY",
+      "actual": "DOWN",
+      "correct": false,
+      "price": 26573.85
+    },
+    {
+      "date": "2026-01-28",
+      "predicted": "SELL",
+      "actual": "UP",
+      "correct": false,
+      "price": 26431.92
+    },
+    {
+      "date": "2026-01-29",
+      "predicted": "SELL",
+      "actual": "UP",
+      "correct": true,
+      "price": 26204.47
+    },
+    {
+      "date": "2026-01-30",
+      "predicted": "SELL",
+      "actual": "DOWN",
+      "correct": true,
+      "price": 26178.43
+    },
+    {
+      "date": "2026-02-02",
+      "predicted": "SELL",
+      "actual": "UP",
+      "correct": true,
+      "price": 26119.88
+    },
+    {
+      "date": "2026-02-03",
+      "predicted": "BUY",
+      "actual": "DOWN",
+      "correct": true,
+      "price": 25820.99
+    },
+    {
+      "date": "2026-02-04",
+      "predicted": "BUY",
+      "actual": "UP",
+      "correct": true,
+      "price": 26499.3
+    },
+    {
+      "date": "2026-02-05",
+      "predicted": "SELL",
+      "actual": "UP",
+      "correct": true,
+      "price": 26011.84
+    },
+    {
+      "date": "2026-02-06",
+      "predicted": "SELL",
+      "actual": "DOWN",
+      "correct": true,
+      "price": 26717.95
+    },
+    {
+      "date": "2026-02-09",
+      "predicted": "SELL",
+      "actual": "UP",
+      "correct": true,
+      "price": 27405.33
+    },
+    {
+      "date": "2026-02-10",
+      "predicted": "SELL",
+      "actual": "DOWN",
+      "correct": true,
+      "price": 27626.45
+    },
+    {
+      "date": "2026-02-11",
+      "predicted": "BUY",
+      "actual": "UP",
+      "correct": true,
+      "price": 27625.62
+    },
+    {
+      "date": "2026-02-12",
+      "predicted": "BUY",
+      "actual": "UP",
+      "correct": true,
+      "price": 27198.68
+    },
+    {
+      "date": "2026-02-13",
+      "predicted": "SELL",
+      "actual": "DOWN",
+      "correct": true,
+      "price": 27731.88
+    }
+  ],
+  "trades": [
+    {
+      "date": "2026-01-23",
+      "type": "BUY",
+      "price": 26169.11,
+      "shares": 3,
+      "amount": 78507.33
+    },
+    {
+      "date": "2026-01-26",
+      "type": "SELL",
+      "price": 26142.85,
+      "shares": 3,
+      "amount": 78428.55,
+      "profit": -78.78
+    },
+    {
+      "date": "2026-01-27",
+      "type": "BUY",
+      "price": 26573.85,
+      "shares": 3,
+      "amount": 79721.55
+    },
+    {
+      "date": "2026-01-28",
+      "type": "SELL",
+      "price": 26431.92,
+      "shares": 3,
+      "amount": 79295.76,
+      "profit": -425.79
+    },
+    {
+      "date": "2026-02-04",
+      "type": "BUY",
+      "price": 26499.3,
+      "shares": 3,
+      "amount": 79497.9
+    },
+    {
+      "date": "2026-02-05",
+      "type": "SELL",
+      "price": 26011.84,
+      "shares": 3,
+      "amount": 78035.52,
+      "profit": -1462.38
+    },
+    {
+      "date": "2026-02-12",
+      "type": "BUY",
+      "price": 27198.68,
+      "shares": 3,
+      "amount": 81596.04
+    },
+    {
+      "date": "2026-02-13",
+      "type": "SELL",
+      "price": 27731.88,
+      "shares": 3,
+      "amount": 83195.64,
+      "profit": 1599.6
+    }
+  ]
+}

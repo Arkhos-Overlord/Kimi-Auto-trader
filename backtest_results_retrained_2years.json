@@ -1,0 +1,19 @@
+{
+  "period": "2024-02-19 to 2026-02-17",
+  "trading_days": 494,
+  "training_days": 344,
+  "testing_days": 148,
+  "model_accuracy": 44.59,
+  "initial_balance": 100000,
+  "final_balance": 100000,
+  "total_profit": 0,
+  "roi": 0.0,
+  "total_trades": 0,
+  "winning_trades": 0,
+  "losing_trades": 0,
+  "win_rate": 0,
+  "max_drawdown": 0,
+  "sharpe_ratio": 0,
+  "avg_trade_pnl": 0,
+  "signals_generated": 148
+}
